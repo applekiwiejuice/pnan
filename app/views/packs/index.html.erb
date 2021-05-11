@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%=@item.item_name%> Packs</h1>
+<p><%=@item.item_code%></p>
+<hr>
+<table>
+  <thead>
+    <tr>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @packs.each do |pack| %>
+      <tr>
+        <td><%= pack.quantity %></td>
+        <td><%= number_to_currency(pack.price) %></td>
+        <td><%= link_to 'Edit', edit_item_pack_path(:id => pack.id) %></td>
+        <td><%= link_to 'Destroy', item_pack_path(:id => pack.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pack', new_item_pack_path, class: "btn btn-warning btn-lg w-25 mx-auto mb-2" %>
+<%= link_to 'Back', items_path %>

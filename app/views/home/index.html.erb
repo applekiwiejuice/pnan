@@ -1,2 +1,36 @@
-<h1>Welcome!</h1>
-<h1>Panaderya ni Aling Nena!</h1>
+<h1>Welcome to</h1>
+<h1>Panaderya ni Aling Nena™</h1>
+<%= link_to 'Add Item', items_path, class: "btn btn-warning btn-lg w-25 mx-auto mt-2" %>
+
+<div class="container p-5">
+    <div class="row">
+        <% @items.each do |item| %>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card-deck">
+            <div class="card"> 
+            <% if item.item_code == 'VS5'%>
+            <img class="card-img-top" src="https://www.stayathomemum.com.au/cache/860x380-0/wp-content/uploads/2011/07/Cheesy-Vegemite-Scrolls-6-edited-e1611117211462.jpg" alt="VS5">
+            <% elsif item.item_code == 'MB11'%>
+            <img class="card-img-top" src="https://www.biggerbolderbaking.com/wp-content/uploads/2020/05/Bakery-Style-Lemon-Blueberry-Muffins-WS-Thumbnail.jpg" alt="MB11">
+            <% elsif item.item_code == 'CF' %>
+            <img class="card-img-top" src="https://www.bakingbusiness.com/ext/resources/2020/4/Croissant.jpg" alt="MB11">
+            <% end %>
+            <div class="card-body">
+                <h5 class="card-title"><%= item.item_name %> <%= item.item_code %></h5>
+                    <% quantity_array=[] %>
+                    <% item.packs.each do |list| %>
+                    <% quantity_array.push(list.quantity) %>
+                    <p><%= list.quantity %> for <%= number_to_currency(list.price)%></p>
+                    <% end %>
+                    <p><%= quantity_array %></p>
+                <h6 class="card-text">Mapapa-WOW! ka sa sarap! kahit abutin ng isang linggo, walang amag!</h6>
+                <input step="any" type="number" name="orders" id="number_of_orders"/>
+                <a href="#" class="btn btn-primary mt-2">Buy now!</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <% end %>
+    </div>
+</div>
+

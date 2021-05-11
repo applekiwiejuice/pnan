@@ -1,0 +1,3 @@
+class CalculatePrice < ApplicationController
+
+end

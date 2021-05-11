@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
 body {
-  background-color: #fff;
-  color: #333;
-  margin: 33px; }
+  background-color: #3D155F;
+  color: #DF678C;
+  text-align: center;
+  margin: 33px;
+}
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
   line-height: 18px; }
 
 pre {
@@ -14,14 +18,11 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000; }
-
-a:visited {
-  color: #666; }
+  color: blue; }
 
 a:hover {
   color: #fff;
-  background-color: #000; }
+ }
 
 th {
   padding-bottom: 5px; }

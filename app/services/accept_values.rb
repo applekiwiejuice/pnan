@@ -1,0 +1,3 @@
+class AcceptValues < ApplicationController
+
+end

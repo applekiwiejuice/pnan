@@ -1,0 +1,27 @@
+<%= form_with model: [@item,@pack] do |form| %>
+  <% if pack.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pack.errors.count, "error") %> prohibited this pack from being saved:</h2>
+
+      <ul>
+        <% pack.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.number_field :quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, step: :any %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "New pack", class: "btn btn-warning btn-lg w-25 mx-auto" %>
+  </div>
+<% end %>
