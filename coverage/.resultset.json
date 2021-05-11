@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/helpers/home_helper_spec.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/helpers/items_helper_spec.rb": {
         "lines": [
           1,
           null,
@@ -363,8 +363,19 @@
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/factories/numbers.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/factories/items.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/factories/packs.rb": {
+        "lines": [
+          1,
           1,
           1,
           1,
@@ -376,7 +387,13 @@
       "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/config/routes.rb": {
         "lines": [
           1,
+          null,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
           1,
           null,
           null
@@ -394,13 +411,19 @@
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/helpers/numbers_helper.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/helpers/items_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/helpers/numbers_helper_spec.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/helpers/packs_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/helpers/packs_helper_spec.rb": {
         "lines": [
           1,
           null,
@@ -419,7 +442,7 @@
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/models/number_spec.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/models/item_spec.rb": {
         "lines": [
           1,
           null,
@@ -428,8 +451,9 @@
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/models/number.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/models/item.rb": {
         "lines": [
+          1,
           1,
           1,
           null
@@ -442,22 +466,24 @@
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/requests/home_spec.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/models/pack_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
-          1,
-          0,
-          null,
-          null,
-          null,
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/requests/numbers_spec.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/models/pack.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/requests/items_spec.rb": {
         "lines": [
           1,
           null,
@@ -504,6 +530,140 @@
           1,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/requests/packs_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          8,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
           0,
           null,
           null,
@@ -591,7 +751,7 @@
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/routing/numbers_routing_spec.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/routing/items_routing_spec.rb": {
         "lines": [
           1,
           null,
@@ -633,7 +793,7 @@
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/controllers/numbers_controller.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/controllers/items_controller.rb": {
         "lines": [
           1,
           1,
@@ -660,23 +820,6 @@
           1,
           0,
           null,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -719,7 +862,6 @@
           null,
           1,
           0,
-          null,
           null,
           null
         ]
@@ -730,92 +872,206 @@
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/home/index.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/numbers/edit.html.erb_spec.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/routing/packs_routing_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
+          1,
           null,
           null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           null,
           1,
           1,
           null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/numbers/index.html.erb_spec.rb": {
-        "lines": [
-          1,
           null,
           1,
           1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/numbers/new.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
           null,
           null,
           1,
           1,
           null,
-          1,
           null,
           1,
-          null,
           1,
           null,
           null,
           null
         ]
       },
-      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/numbers/show.html.erb_spec.rb": {
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/app/controllers/packs_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/items/edit.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/items/index.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/items/new.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/items/show.html.erb_spec.rb": {
         "lines": [
           1,
           null,
@@ -831,11 +1087,80 @@
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/packs/edit.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/packs/index.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/packs/new.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Shanelle/desktop/coding-challenge/bakery/spec/views/packs/show.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1620674727
+    "timestamp": 1620762272
   }
 }
