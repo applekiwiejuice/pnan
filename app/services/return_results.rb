@@ -1,3 +1,0 @@
-class ReturnResults < ApplicationController
-
-end

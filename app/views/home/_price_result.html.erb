@@ -1,0 +1,13 @@
+<div class="card text-dark">
+  <h1>ID: <%= @item_id %></h1>
+  <h1>Code: <%= @item_code %></h1>
+  <h1>Qty: <%= @quantity %></h1>
+  <p>Initial Pattern: <%= @array %></p>
+  <p>Best Combo: <%= @best_combo %></p>
+  <h3>Breakdown</h3>
+  <% @total_breakdown.each do |breakdown| %>
+    <p><%= breakdown %></p>
+  <% end %>
+  <h1>Total: </h1>
+  <h1><%= number_to_currency(@calculation) %></h1>
+</div>
