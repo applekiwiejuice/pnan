@@ -8,6 +8,32 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 require 'shoulda/matchers'
 require 'capybara/rspec'
+require 'capybara/poltergeist'
+require 'selenium-webdriver'
+Capybara.javascript_driver = :poltergeist
+Capybara.default_max_wait_time = 5
+
+# Capybara.register_driver :poltergeist_debug do |app|
+#   driver_options = {
+#     inspector: true,
+#     timeout: 5,
+#     js_errors: false,
+#     debug: false,
+#     phantomjs_logger: Logger.new('/dev/null')
+#   }
+#   if ENV['DEBUG_PHANTOMJS']
+#     driver_options.merge!({
+#       logger: Kernel,
+#       js_errors: true,
+#       debug: true,
+#       phantomjs_logger: File.open(Rails.root.join('log/phantomjs.log'), 'a')
+#     })
+#   end
+#   Capybara::Poltergeist::Driver.new(app, driver_options)
+# end
+
+# Capybara.javascript_driver = :poltergeist_debug
+# Capybara.default_driver = :poltergeist_debug
 
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
 
@@ -21,6 +47,16 @@ end
 RSpec.configure do |config|
   config.use_transactional_fixtures = false
   config.include FactoryBot::Syntax::Methods
+
+  config.before(:suite) do
+    DatabaseRewinder.clean_all
+    # or
+    # DatabaseRewinder.clean_with :any_arg_that_would_be_actually_ignored_anyway
+    end
+
+  config.after(:each) do
+    DatabaseRewinder.clean
+  end
   # config.include Devise::Test::IntegrationHelpers, type: :feature
   # config.include Warden::Test::Helpers
 

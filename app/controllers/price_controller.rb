@@ -22,7 +22,8 @@ class PriceController < ApplicationController
     @calculation = calculate_price(details, best_combo)
 
     respond_to do |format|
-    format.js { render partial: 'home/price_result' }
+      format.html { redirect_to root_path }
+      format.js { render partial: 'home/price_result' }
     end
   end
 

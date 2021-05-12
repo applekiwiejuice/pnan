@@ -29,11 +29,11 @@
               <% elsif item.item_code == 'CF' %>
                 <p class="card-text">Simpleng tinapay lang, pero mabangis, mas mabango pa sa hindi naligong misis.</p>
               <% end %>
-              <%= form_tag get_price_path, remote: true, method: :get do %>
+              <%= form_tag get_price_path, id: item.item_code, remote: true, method: :get do %>
                 <%= hidden_field_tag :item_id, item.id %>
                 <%= hidden_field_tag :item_code, item.item_code %>
                 <%= number_field_tag :quantity, params[:quantity], placeholder: 'Enter Quantity', min: '1', max: '100', class: "form-control" %>
-                <%= button_tag "Get Price", class: "btn btn-primary mt-2 mt-3"%>
+                <%= button_tag "Get Price", class: "btn btn-primary mt-2 mt-3" %>
               <% end %>
             </div>
           </div>
