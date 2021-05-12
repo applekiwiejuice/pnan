@@ -1,5 +1,6 @@
 <h3>Welcome to</h3>
-<h3>Panaderya ni Aling Nena™</h3>
+<h3>Panaderya ni Aling Nena™ Packs Calculator</h3>
+<p>An App for per packs price calculation</p>
 <%= link_to 'Add Products', items_path, class: "btn btn-warning btn-lg w-25 mx-auto mt-2" %>
 <div class="container p-5">
   <div class="row">
@@ -7,27 +8,14 @@
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="card-deck">
           <div class="card">
-            <% if item.item_code == 'VS5'%>
-              <img class="card-img-top" src="https://www.stayathomemum.com.au/cache/860x380-0/wp-content/uploads/2011/07/Cheesy-Vegemite-Scrolls-6-edited-e1611117211462.jpg" alt="VS5">
-            <% elsif item.item_code == 'MB11'%>
-              <img class="card-img-top" src="https://www.biggerbolderbaking.com/wp-content/uploads/2020/05/Bakery-Style-Lemon-Blueberry-Muffins-WS-Thumbnail.jpg" alt="MB11">
-            <% elsif item.item_code == 'CF' %>
-              <img class="card-img-top" src="https://www.bakingbusiness.com/ext/resources/2020/4/Croissant.jpg" alt="MB11">
-            <% end %>
+            <%= image_tag ('bread.svg'), class: "card-img-top" %>
             <div class="card-body">
-              <h5 class="card-title"><%= item.item_name %> <%= item.item_code %></h5>
+              <h5 class="card-title"><%= item.item_name %></h5>
+              <h5 class="card-title"><%= item.item_code %></h5>
               <% quantity_array=[] %>
               <% item.packs.each do |list| %>
                 <% quantity_array.push(list.quantity) %>
                 <h6><%= list.quantity %> for <%= number_to_currency(list.price)%></h6>
-              <% end %>
-              <p><%= quantity_array.sort! { |a, b| b <=> a }  %></p>
-              <% if item.item_code == 'VS5'%>
-                <p class="card-text">Mapapa-WOW! ka sa sarap! kahit abutin ng isang linggo, walang amag!</p>
-              <% elsif item.item_code == 'MB11'%>
-                <p class="card-text">Kapag kumain ka neto! daig mo pang nanalo sa lotto!</p>
-              <% elsif item.item_code == 'CF' %>
-                <p class="card-text">Simpleng tinapay lang, pero mabangis, mas mabango pa sa hindi naligong misis.</p>
               <% end %>
               <%= form_tag get_price_path, id: item.item_code, remote: true, method: :get do %>
                 <%= hidden_field_tag :item_id, item.id %>
