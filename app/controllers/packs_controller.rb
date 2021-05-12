@@ -54,7 +54,7 @@ class PacksController < ApplicationController
   def destroy
     @pack.destroy
     respond_to do |format|
-      format.html { redirect_to packs_url, notice: "Pack was successfully destroyed." }
+      format.html { redirect_to item_packs_path, notice: "Pack was successfully destroyed." }
       format.json { head :no_content }
     end
   end
